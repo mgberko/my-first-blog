@@ -4,12 +4,23 @@
   </head>
 
   <body>
+    <div>
+      {% for post in posts %}
+        <div>
+            <p>published: {{post.published_date}}</p>
+            <h1><a href="">{{post.title}}</a></h1>
+            <p>{{post.text|linebreaksbr}}</p>
+        </div>
+      {% endfor %}
+
+    </div>
       <div>
         <h1><a href="">עברית</a></h1>
+      </div>
       <div>
         <h2><a href="">שלום</a></h2>
         <p>Hello, Goodbye, Peace</p>
-      <div>
+      </div>
 
       <div>
         <h2><a href="">בחצלחה!!</a></h2>
